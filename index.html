@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock Paper Scissors</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1 id="title">Rock Paper Scissors</h1>
+    <div class="choices">
+        <div class="choice" id="rock">
+            <img src="img/rock.jpg" alt="Rock">
+        </div>
+        <div class="choice" id="paper">
+            <img src="img/pape.png" alt="Paper">
+        </div>
+        <div class="choice" id="scissors">
+            <img src="img/scissors.png" alt="Scissors">
+        </div>
+    </div>
+    <div class="score-board">
+        <div class="score">
+            <p id="user-score">0</p>
+            <p>You</p>
+        </div>
+        <div class="score">
+            <p id="computer-score">0</p>
+            <p>Computer</p>
+        </div>
+    </div>
+    <div class="msg-container">
+        <p id="msg">Play Your Move</p>
+    </div>
+    
+    <!-- Score History Table -->
+    <div class="history-container">
+        <div class="history-header">
+            <h2>Game History</h2>
+            <button id="clear-history">Clear History</button>
+        </div>
+        <table id="history-table">
+            <thead>
+                <tr>
+                    <th>Round</th>
+                    <th>Your Choice</th>
+                    <th>Computer's Choice</th>
+                    <th>Result</th>
+                </tr>
+            </thead>
+            <tbody id="history-body">
+                <!-- History rows will be added here dynamically -->
+            </tbody>
+        </table>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
